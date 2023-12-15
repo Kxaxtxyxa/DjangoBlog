@@ -52,7 +52,7 @@ python manage.py runserver
 
 ## Authors
 
-* **Your Name** - *Initial work* - [Kxaxtxyxa](https://github.com/Kxaxtxyxa)
+* **Kxaxtxyxa** - [Kxaxtxyxa](https://github.com/Kxaxtxyxa)
 
 
 
