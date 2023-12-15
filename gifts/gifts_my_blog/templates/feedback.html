@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
+
+  <form method="post" action="{% url 'feedback' %}">
+    {% csrf_token %}
+    <div style="margin-left: 10%">
+      <div style="display: flex; align-items: center;">
+        <h2>Имя  </h2>
+        <input style="height: 25px;" class="name" name="name">
+      </div>
+      <div style="display: flex; align-items: center;">
+        <h2>email </h2>
+        <input style="height: 25px;" class="email" name="email">
+      </div>
+      <div>
+        <h2>Отзыв</h2>
+        <textarea style="width: 70%; height: 200px;" class="feedback" name="feedback"></textarea>
+      </div>
+      <button type="submit">Отправить</button>
+    </div>
+  </form>
+  <h1 style="margin-left: 10%;">Отзывы</h1>
+
+  {% for feedback in feedbacks %}
+        <div style="margin-left: 10%;">
+          <h2>{{ feedback.name }}</h2>
+          <p>Email: {{ feedback.email }}</p>
+          <p>Отзыв: {{ feedback.text }}</p>
+        </div>
+  {% endfor %}
+{% endblock %}

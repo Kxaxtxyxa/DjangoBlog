@@ -1,0 +1,46 @@
+main{
+    background-image: url("/static/img/Frame 2.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1080px;
+}
+
+main img{
+    width: 847px;
+    height: 608px;
+    flex-shrink: 0;
+    margin-left: 15%;
+    margin-top: 86px;
+}
+
+.main_cont{
+    width: 364px;
+    height: 364px;
+    flex-shrink: 0;
+    position: absolute;
+    border: 11px solid #D9D9D9;
+    background: #FFF;
+    margin-left: 50%;
+    margin-top: 147px;
+
+}
+
+.main_cont h1{
+    color: #000;
+    font-family: Open Sans;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10%;
+}
+
+.main_cont img{
+    width: 73px;
+    height: 151px;
+    flex-shrink: 0;
+    position: absolute;
+    margin-left: 264px;
+    margin-top: -52px;
+}

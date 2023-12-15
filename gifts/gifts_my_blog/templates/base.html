@@ -1,0 +1,24 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="index">Главная</a>
+        <a href="blog">Блог</a>
+        <a href="about">О подарках</a>
+        <a href="feedback">Отзывы</a>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+
+</body>
+</html>
